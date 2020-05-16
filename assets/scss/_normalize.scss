@@ -1,0 +1,229 @@
+html body {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	background-color: #fff;
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	line-height: 38px;
+	font-family: $secondaryfont;
+	color: #707070;
+}
+
+p {
+	font-family: $bodyfont;
+	font-size: 18px;
+	color: #707070;
+	line-height: 30px;
+}
+
+a {
+	transition: 0.3s;
+	color: #0062da;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+blockquote {
+	margin: 0 0 1rem;
+	background-color: #f5f5f5;
+	border: 1px solid #dadada;
+	padding: 20px 30px;
+
+	h4{
+		margin: 0;
+		padding: 0 0 10px 0 !important;
+		font-style: normal;
+		font-family: Oxygen,sans-serif !important;
+	}
+	
+	p {
+		font-family: Oxygen,sans-serif;
+		font-size: 16px !important;
+		font-style: normal;
+		color: #3c3c3c;
+		margin: 0 !important;
+	}
+}
+// Some basic padding for all wrappers
+.wrapper {
+	padding: $grid-gutter-width 0;
+}
+
+// Reset hero wrapper padding to 0
+#wrapper-hero {
+	padding: 0 !important;
+}
+
+// Adding basic WordPress classes to pass the WordPress.org tests
+.sticky,
+.gallery-caption,
+.bypostauthor {
+	font-size: inherit;
+}
+
+// Separate sticky wrapper from main content
+.wrapper#wrapper-sticky {
+	border-bottom: 1px solid $gray-300;
+}
+
+// Adding some contrast background color to footer full widget
+#wrapper-footer-full,
+#wrapper-static-hero {
+	background-color: $gray-200;
+}
+
+// Necessary WP classes
+.wp-caption {
+	font-size: inherit;
+}
+
+.wp-caption-text {
+	font-size: inherit;
+}
+
+.screen-reader-text {
+	@extend .sr-only;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	@extend .mx-auto;
+}
+
+// Post design
+.entry-footer {
+	font-size: 16px;
+	line-height: 22px;
+	font-family: $secondaryfont;
+	color: $link-color;
+
+	span {
+		padding-right: 10px;
+	}
+}
+
+// Limit featured image size to 100%
+img.wp-post-image,
+article img,
+figure,
+img,
+#secondary img {
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	figcaption {
+		font-size: 14px !important;;
+		line-height: 20px;
+		font-family: $secondaryfont;
+		color: #000;
+		font-weight: normal;
+		border-bottom: 1px solid $darkblue;
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+		text-align: left !important;
+	}
+}
+
+// Skip to content link
+a.skip-link {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+}
+
+// Reset Jumbotron default margin
+.jumbotron {
+	margin-bottom: 0;
+}
+
+// Dropdown translation
+.navbar-dark .navbar-nav .dropdown-menu .nav-link {
+	display: block;
+	width: 100%;
+	padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+	clear: both;
+	font-weight: $font-weight-normal;
+	color: $dropdown-link-color !important;
+	text-align: inherit;
+	white-space: nowrap;
+	background: none;
+	border: 0;
+
+	@include hover-focus {
+		color: $dropdown-link-hover-color !important;
+		text-decoration: none;
+		background-color: $dropdown-link-hover-bg;
+	}
+
+	&.active,
+	&:active {
+		color: $dropdown-link-active-color !important;
+		text-decoration: none;
+		background-color: $dropdown-link-active-bg;
+	}
+
+	&.disabled,
+	&:disabled {
+		color: $dropdown-link-disabled-color !important;
+		background-color: transparent;
+		// Remove CSS gradients if they're enabled
+		@if $enable-gradients {
+			background-image: none;
+		}
+	}
+}
+
+.navbar-light .navbar-brand a {
+	color: $navbar-light-active-color;
+	@include hover-focus {
+		color: $navbar-light-active-color;
+	}
+}
+
+.navbar-dark .navbar-brand a {
+	color: $navbar-dark-active-color;
+	@include hover-focus {
+		color: $navbar-dark-active-color;
+	}
+}
+
+.navbar h1 {
+	font-weight: $font-weight-normal;
+}
+
+.view-details {
+	display: block;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: $secondaryfont;
+	color: $link-color;
+	margin-top: 5px;
+
+	&:hover {
+		color: $link-color;
+	}
+
+}

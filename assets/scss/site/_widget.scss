@@ -1,0 +1,36 @@
+
+@media (min-width: 768px) and (max-width: 992px){
+	.ecp-widget-event-list{
+		h6{
+			line-height: 28px;
+			font-size: 14px;
+		}
+	}
+
+	.claendar-parent{
+		.fc-center{
+			h2{
+				font-size: 12px!important;
+				line-height: 20px;
+			}
+		}
+
+	}
+
+	.ecp-widget-event-filter{
+		button{
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+
+	.ecp-widget-event-footer{
+		display: flex;
+		flex-direction: column;
+
+		a{
+			margin-bottom: 5px;
+		}
+	}
+}

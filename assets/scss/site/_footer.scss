@@ -1,0 +1,275 @@
+.footer-area {
+	padding: 52px 0 72px;
+	background: $darkblue;
+	height: 400px;
+	.footer-menu ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+			margin-bottom: 2px;
+			a {
+				font-family: $secondaryfont;
+				font-size: 16px;
+				line-height: 22px;
+				color: #fff;
+			}
+		}
+	}
+	.footer-widget-title {
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 30px;
+		font-family: $basefont;
+		color: #fff;
+		text-transform: uppercase;
+		margin-bottom: 17px;
+	}
+	.footer-copyright {
+		margin-top: 15px;
+		align-self: flex-end;
+		p {
+			font-size: 12px;
+			font-family: $secondaryfont;
+			color: #fff;
+			line-height: 130%;
+			margin-bottom: 0;
+		}
+	}
+	.footer-company {
+		margin-bottom: 30px;
+		.textwidget {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.subscribe-now {
+			button {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			margin-right: 25px;
+			align-self: center;
+		}
+		.subscribe-now, .account-box {
+			display: inline-block;
+		}
+		i {
+			color: #fff;
+			margin-right: 25px;
+			width: 18px;
+			height: 14px;
+			cursor: pointer;
+		}
+		.account-box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span {
+				font-size: 12px;
+				line-height: 17px;
+				font-family: $secondaryfont;
+				letter-spacing: 0;
+				color: #fff;
+				display: block;
+			}
+			a {
+				font-size: 14px;
+				line-height: 19px;
+				font-weight: 700;
+				font-family: $secondaryfont;
+				letter-spacing: 0;
+				color: #fff;
+				vertical-align: top;
+				padding-right: 10px;
+				position: relative;
+				text-transform: uppercase;
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.search-icon {
+			border-left: 1px solid #4DB2EC;
+			padding: 5px 0 5px 25px;
+			display: inline;
+		}
+	}
+	.footer-intro {
+		padding-right: 80px;
+	}
+	.footer-logo-area {
+		padding-bottom: 20px;
+		border-bottom: 1px solid $gray;
+		.footer-img {
+			flex: 1;
+		}
+		.footer-logo {
+			flex: 2;
+			padding-left: 10px;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.footer-search-area {
+				display: block;
+				float: right;
+				.search-icon {
+					display: inline-block;
+					font-size: 28px;
+					line-height: 28px;
+					color: $black;
+					cursor: pointer;
+				}
+				.footer-subscribe {
+					font-size: 18px;
+					line-height: 28px;
+					font-weight: 700;
+					text-align: center;
+					letter-spacing: 0.84px;
+					color: $secondary;
+					text-transform: uppercase;
+					text-decoration: none;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		> div {
+			display: flex;
+			&.subscribe-area {
+				flex-wrap: wrap;
+				flex-direction: column;
+			}
+		}
+	}
+
+	.mc4wp-response {
+		position: absolute;
+		p {
+			font-size: 12px;
+			line-height: 18px;
+			color: #a7a7a7;
+		}
+	}
+}
+.footer-social {
+	padding: 20px 0;
+	ul {
+		padding: 0;
+		li {
+			display: inline-block;
+			padding-left: 8px;
+			padding-right: 8px;
+			a {
+				font-size: 28px;
+				line-height: 32px;
+				color: $black;
+			}
+			&:first-child {
+				font-size: 12px;
+				line-height: 32px;
+				font-weight: 700;
+			}
+		}
+	}
+	a {
+		&:last-child {
+			i {
+				margin-right: 0;
+			}
+		}
+	}
+	i {
+		font-size: 20px;
+		color: $darkblue;
+		margin-right: 20px;
+	}
+	span {
+		i {
+			margin-right: 0;
+		}
+	}
+}
+
+.footer-menu-widget {
+	padding-left: 15px;
+	border-left: 1px solid $gray;
+	height: 100%;
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			a {
+				font-size: 14px;
+				color: $black;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.site-info {
+	margin-top: 15px;
+	.site-info-text {
+		font-size: 12px;
+		color: $black;
+		a {
+			font-size: 12px;
+			color: $black;
+			text-decoration: none;
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 576px ) {
+	.footer-bottom {
+		margin-top: 25px;
+	}
+}
+
+@media screen and ( max-width: 767px ) {
+	.footer-area {
+		text-align: center;
+		.footer-company {
+			p, .account-box, .subscribe-now {
+				text-align: center;
+				width: 100%;
+			}
+			.subscribe-now {
+				margin-right: 0;
+			}
+			i {
+				margin-right: 20px;
+			}
+
+			&:last-child {
+				margin-bottom: 30px;
+			}
+		}
+		.footer-copyright {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and ( max-width: 992px ) {
+	.footer-area {
+		.footer-company {
+			.subscribe-now {
+				margin-bottom: 30px;
+			}
+			i {
+				margin-right: 16px;
+			}
+		}
+	}
+}
+@media screen and ( max-width: 1200px ) {
+	.footer-area {
+		height: auto !important;
+	}
+}

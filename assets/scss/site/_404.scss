@@ -1,0 +1,54 @@
+#error-404-wrapper{
+	.container{
+		background: url(../../images/bg-404.jpg) no-repeat;
+		background-size: cover;
+		min-height: 600px;
+		height: auto;
+		width: 100%;
+
+		.page-header{
+			.page-title{
+				font-size: 120px;
+				color: $link-color;
+			}
+		}
+
+		.page-content{
+			background: rgba(255, 255, 255, 0.7);
+			padding: 20px;
+			border-radius: 3px;
+
+			form{
+				max-width: 375px;
+				width: 100%;
+				margin: auto;
+
+				input[type="text"] {
+					font-size: 14px;
+					font-family: $secondaryfont;
+					&::placeholder{
+						font-family: $secondaryfont;
+						font-size: 14px;
+					}
+				}
+
+				input[type="submit"] {
+					background: $link-color;
+					color: #fff;
+					border: none;
+					outline: none;
+				}
+			}
+
+			p{
+				color: $link-color;
+				font-family: $secondaryfont;
+
+				a{
+					font-weight: 700;
+
+				}
+			}
+		}
+	}
+}

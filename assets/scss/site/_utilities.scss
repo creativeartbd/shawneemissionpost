@@ -1,0 +1,133 @@
+.p-l-0 {
+	padding-left : 0;
+}
+.p-r-0 {
+	padding-right : 0;
+}
+.p-0 {
+	padding:0;
+}
+.full-width {
+	width: 100%;
+	padding: 5px 0;
+}
+.btn-secondary {
+	color: #fff;
+	background-color: #1b3367;
+	border-color: #1b3367;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-family: $basefont;
+	color: $darkblue;
+	font-weight: bold;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-family: $basefont;
+	color: $darkblue;
+	font-weight: bold;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-family: $basefont;
+	color: $darkblue;
+	font-weight: bold;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-family: $basefont;
+	color: $darkblue;
+	font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+	font-size: 16px;
+}
+::-moz-placeholder {
+	font-size: 16px;
+}
+:-ms-input-placeholder {
+	font-size: 16px;
+}
+::placeholder {
+	font-size: 16px;
+}
+// Because they post the feature image directly into the code editor :(
+.remove-top-padding {
+	padding: 0 !important;
+	blockquote {
+		margin-left: 23px !important;
+		margin-right: 23px !important;
+		p {
+			padding: 0;
+		}
+	}
+	ul {
+		list-style-type: disc !important;
+		margin-left: 40px !important;
+		margin-right: 40px !important;
+		li {
+			line-height: 30px!important;
+			color: #474747;
+		}
+	}
+	h4 {
+		padding: 23px;
+		text-transform: uppercase;
+		font-family: $secondaryfont;
+		font-weight: bold;
+		font-size: 19px;
+		line-height: 28px;
+		color: $darkblue;
+	}
+	figure {
+		&:first-child {
+			margin-bottom: 0;
+			padding: 0;
+			width: 100% !important;
+			img {
+				width: 100%;
+			}
+			figcaption {
+				margin: 18px 18px 18px 18px !important;
+			}
+		}
+		padding-right: 23px;
+	}
+	p {
+		padding: 0 23px;
+		&:first-child {
+			padding: 0;
+			img {
+				margin-bottom: 49px;
+				width: 100%;
+			}
+		}
+	}
+	.social-share {
+		padding: 43px 18px 0 23px;
+		ul {
+			margin-left: 0 !important;
+		}
+		p {
+			padding: 0;
+		}
+	}
+}
+
+@media screen and ( max-width: 992px ) {
+	.remove-top-padding figure {
+		padding-left: 23px;
+	}
+}
+// Because they post the feature image directly into the code editor :( end here!
+
+.tml-login {
+	.tml-links {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+#wrapper-navbar {
+    margin-bottom: 8px;
+}

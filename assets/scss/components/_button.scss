@@ -1,0 +1,140 @@
+.btn:focus {
+	box-shadow: none;
+}
+
+.form-control:focus {
+	outline: 0 !important;
+	box-shadow: none;
+	border: transparent;
+}
+
+.comment-btn {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.event-btn {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: $basefont;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: $darkblue;
+	border: none;
+	width: 100%;
+	padding: 8px 0;
+}
+
+.subscribe-form-input {
+	height: 42px;
+	border-radius: 0;
+	border: 1px solid transparent;
+	outline: 0 !important;
+}
+
+.subscribe-form-btn {
+	background-color: #000;
+	color: #fff;
+	border: 0;
+	text-align: center;
+	font-size: 14px;
+	font-family: $secondaryfont;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 5px;
+	border-radius: 0;
+	box-shadow: none;
+	z-index: 11 !important;
+	padding: 10px 34px;
+	&:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+	&:hover {
+		color: #fff;
+		background-color: #000 !important;
+		border-color: inherit;
+	}
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.subscribe-btn {
+	font-weight: bold;
+	font-family: $secondaryfont;
+	background-color: #ff009d;
+	font-size: 11px;
+	letter-spacing: 0;
+	color: #fff;
+	border: none;
+	height: 31px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+
+.event-common-btn {
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: $basefont;
+	letter-spacing: 0;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: $darkblue;
+	border: none;
+	line-height: 31px;
+	padding: 0 15px;
+	border-radius: 0;
+}
+
+.event-map-ticket-btn {
+	text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: $basefont;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $darkblue;
+    border: none;
+    line-height: 25px;
+    padding: 9px 33px;
+	border-radius: 0;
+	margin-bottom: 34px;
+	display: inline-block;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.event-community-btn {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: $basefont;
+	letter-spacing: 0;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: $darkblue;
+	border: none;
+	line-height: 31px;
+	padding: 5px 0;
+	border-radius: 0;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+@media screen and ( max-width: 992px ) {
+	.event-common-btn {
+		width: 100% !important;
+		margin-bottom: 5px;
+	}
+}

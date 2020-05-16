@@ -1,0 +1,22 @@
+.post, .page {
+  font-family: georgia;
+  font-size: 18px;
+  color: #707070;
+}
+
+.postpagination {
+	margin-bottom: 20px;
+	a {
+		font-size: 19px !important;
+		background: #ccc;
+		padding: 5px 16px 7px;
+		margin-right: 12px;
+	}
+	span {
+		font-size: 19px;
+		background: #1b3367;
+		padding: 5px 16px 7px;
+		margin-right: 12px;
+		color: #fff;
+	}
+}
